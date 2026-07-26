@@ -208,3 +208,26 @@ flex-wrap:wrap;
 }
 
 }
+.mobile-nav{
+display:none;
+}
+
+.mobile-nav.active{
+display:block;
+background:#0B3B8C;
+padding:20px;
+}
+
+.sticky{
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.dark-mode{
+background:#111;
+color:#fff;
+}
+
+.dark-mode .glass{
+background:#1b1b1b;
+color:#fff;
+}
