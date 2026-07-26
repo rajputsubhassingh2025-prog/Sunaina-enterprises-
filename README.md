@@ -72,15 +72,5 @@ Made with dedication by <b>Sunaina Enterprises Team</b>
 ## 🖼️ Gallery
 
 <p align="center">
-  <img src="IMG_20240413_233729".jpg width="300">
-</p>
-## 🖼️ Gallery
-
-<p align="center">
-<img src="file_000000001c5c81fa9eb5488553acbd7a.png width="300">
-</p>
-## 🖼️ Gallery
-
-<p align="center">
-<img src=" file_00000000784c81fab65010cf55ebaa4d.jpgwidth="300">
+<img src="https://raw.githubusercontent.com/rajputsubhassingh2025-prog/Sunaina-enterprises-/7664b223cc0c9f73a371a1e5fbd35e283e5a18e1/file_000000001c5c81fa9eb5488553acbd7a.png" width="400">
 </p>
