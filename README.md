@@ -77,5 +77,5 @@ Made with dedication by <b>Sunaina Enterprises Team</b>
 ## 🖼️ Gallery
 
 <p align="center">
-<img src=" width="300">
+<img src="file_000000001c5c81fa9eb5488553acbd7a.png width="300">
 </p>
