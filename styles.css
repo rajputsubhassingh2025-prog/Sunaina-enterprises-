@@ -1,0 +1,210 @@
+/* ==========================
+   SUNAINA ENTERPRISES V2
+   Premium Corporate Theme
+========================== */
+
+:root{
+  --primary:#0B3B8C;
+  --secondary:#C79C2B;
+  --dark:#111827;
+  --light:#f8fafc;
+  --white:#ffffff;
+  --gray:#6b7280;
+  --shadow:0 15px 35px rgba(0,0,0,.12);
+  --radius:18px;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f4f7fb;
+color:#222;
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* Header */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(11,59,140,.95);
+backdrop-filter:blur(10px);
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.header-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.brand{
+display:flex;
+align-items:center;
+text-decoration:none;
+color:#fff;
+}
+
+.logo{
+width:55px;
+height:55px;
+border-radius:50%;
+margin-right:12px;
+}
+
+.brand-name{
+font-size:24px;
+font-weight:700;
+display:block;
+}
+
+.brand-tag{
+font-size:13px;
+opacity:.8;
+}
+
+.main-nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.main-nav a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.main-nav a:hover{
+color:var(--secondary);
+}
+
+/* Buttons */
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:50px;
+background:var(--secondary);
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+box-shadow:var(--shadow);
+}
+
+.btn:hover{
+transform:translateY(-4px);
+background:#d7ad39;
+}
+
+.btn.ghost{
+background:transparent;
+border:2px solid #fff;
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(11,59,140,.82),rgba(11,59,140,.82)),
+url("assets/banner.jpg") center/cover;
+color:#fff;
+padding-top:90px;
+}
+
+.site-title{
+font-size:64px;
+font-family:'Playfair Display',serif;
+margin-bottom:15px;
+}
+
+.site-sub{
+font-size:22px;
+max-width:850px;
+margin:auto;
+margin-bottom:25px;
+}
+
+.hero-ctas{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* Section */
+
+.section{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:10px;
+color:var(--primary);
+}
+
+.section-sub{
+text-align:center;
+color:var(--gray);
+margin-bottom:50px;
+}
+
+/* Glass Card */
+
+.glass{
+background:rgba(255,255,255,.7);
+backdrop-filter:blur(12px);
+border-radius:20px;
+padding:30px;
+box-shadow:var(--shadow);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.site-title{
+font-size:42px;
+}
+
+.site-sub{
+font-size:18px;
+}
+
+.main-nav{
+display:none;
+}
+
+.header-inner{
+flex-wrap:wrap;
+}
+
+}
