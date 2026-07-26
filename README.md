@@ -91,3 +91,16 @@ Made with dedication by <b>Sunaina Enterprises Team</b>
 <img src="https://raw.githubusercontent.com/rajputsubhassingh2025-prog/Sunaina-enterprises-/e479f78e833c66d75f0d2b5ceff03ea7d0a296c9/IMG_20240413_233729.jpg" width="400">
 
 </p>
+## 🌿 Owner Note
+
+Sunaina Enterprises केवल एक व्यवसाय नहीं, बल्कि विश्वास, मेहनत और समर्पण की एक नई सोच है।
+
+यह यात्रा **स्वर्गीय श्रीमती सुनीना देवी जी** की पवित्र स्मृतियों, उनके संस्कारों और उनके आशीर्वाद को समर्पित है। उनके आदर्श और मूल्य हमें हमेशा ईमानदारी, गुणवत्ता और बेहतर सेवा के मार्ग पर आगे बढ़ने की प्रेरणा देते रहेंगे।
+
+हमारा संकल्प है कि Sunaina Enterprises के माध्यम से ग्राहकों, रिटेलर्स और व्यापारिक सहयोगियों के साथ मजबूत एवं भरोसेमंद संबंध स्थापित किए जाएं।
+
+आपका विश्वास हमारी प्रेरणा है और आपकी संतुष्टि हमारी प्राथमिकता।
+
+**Delivering Trust Since 2026**
+
+— Sunaina Enterprises Team
