@@ -207,3 +207,262 @@ section{
     color:#0b3d91;
     margin-bottom:15px;
 }
+/* =========================
+   PRODUCTS
+========================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+    transition:.35s;
+    text-align:center;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    color:#0b3d91;
+    margin:18px 0 10px;
+}
+
+.product-card p{
+    padding:0 18px;
+    color:#555;
+}
+
+.product-card .btn{
+    display:inline-block;
+    margin:20px 0 25px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   WHY US
+========================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.why-card{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+.why-card h3{
+    color:#0b3d91;
+    margin-bottom:15px;
+}
+
+/* =========================
+   RETAILER
+========================= */
+
+.retailer{
+    background:#0b3d91;
+    color:#fff;
+    text-align:center;
+}
+
+.retailer h2{
+    color:#ffd54f;
+    margin-bottom:20px;
+}
+
+.retailer p{
+    max-width:700px;
+    margin:0 auto 30px;
+}
+
+/* =========================
+   TRIBUTE
+========================= */
+
+.tribute{
+    background:#fff8e7;
+    text-align:center;
+}
+
+.tribute h2{
+    color:#0b3d91;
+    margin-bottom:20px;
+}
+
+.tribute p{
+    max-width:850px;
+    margin:auto;
+    color:#444;
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:#ffffff;
+    text-align:center;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+.contact .btn{
+    margin-top:25px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0b3d91;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    color:#ffd54f;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content h2{
+    font-size:28px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    padding:120px 20px;
+    height:auto;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content h2{
+    font-size:24px;
+}
+
+.section-title{
+    font-size:30px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.btn,
+.btn2,
+.call-btn{
+    width:100%;
+    text-align:center;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.logo-area h2{
+    font-size:20px;
+}
+
+.section-title{
+    font-size:26px;
+}
+
+}
