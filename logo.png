@@ -1,1 +1,18 @@
+<header class="site-header">
+  <div class="container header-inner">
 
+    <a href="index.html" class="brand">
+
+      <img src="./assets/logo.png"
+           alt="Sunaina Enterprises Logo"
+           class="logo">
+
+      <div class="brand-text">
+        <h2>Sunaina Enterprises</h2>
+        <p>Delivering Trust Since 2026</p>
+      </div>
+
+    </a>
+
+  </div>
+</header>
