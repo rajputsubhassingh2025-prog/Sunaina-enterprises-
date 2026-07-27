@@ -1,96 +1,126 @@
-/* ============================
-   Sunaina Enterprises
-   Premium Script - Part 1
-============================ */
-
-// Loading Screen
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loadingOverlay");
-  if (loader) {
-    loader.style.opacity = "0";
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 500);
-  }
-});
-
-// Mobile Menu
-const menuBtn = document.getElementById("mobileMenuBtn");
-const mobileNav = document.getElementById("mobileNav");
-
-if (menuBtn && mobileNav) {
-  menuBtn.addEventListener("click", () => {
-    mobileNav.classList.toggle("active");
-  });
-}
-
-// Sticky Header
-const header = document.getElementById("siteHeader");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 80) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-});
+// ===========================
+// SUNAINA ENTERPRISES
+// script.js
+// ===========================
 
 // Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e){
+        e.preventDefault();
 
-    const target = document.querySelector(this.getAttribute("href"));
-
-    if(target){
-      target.scrollIntoView({
-        behavior:"smooth"
-      });
-    }
-
-    if(mobileNav){
-      mobileNav.classList.remove("active");
-    }
-  });
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior:"smooth"
+        });
+    });
 });
 
-// Dark Mode
-const darkBtn = document.getElementById("darkToggle");
+// Sticky Header
+window.addEventListener("scroll",function(){
 
-if(darkBtn){
+    const header=document.querySelector(".header");
 
-darkBtn.addEventListener("click",()=>{
+    if(window.scrollY>80){
 
-document.body.classList.toggle("dark-mode");
+        header.style.background="#062b69";
+        header.style.boxShadow="0 8px 20px rgba(0,0,0,.25)";
 
-if(document.body.classList.contains("dark-mode")){
+    }else{
 
-darkBtn.innerHTML="☀️";
+        header.style.background="#0b3d91";
+        header.style.boxShadow="none";
 
-localStorage.setItem("theme","dark");
+    }
+
+});
+
+// Reveal Animation
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section").forEach((el)=>{
+
+observer.observe(el);
+
+});
+
+// Back To Top Button
+const topBtn=document.createElement("button");
+
+topBtn.innerHTML="↑";
+
+topBtn.id="topBtn";
+
+document.body.appendChild(topBtn);
+
+topBtn.style.cssText=`
+position:fixed;
+right:20px;
+bottom:20px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#0b3d91;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:none;
+z-index:999;
+`;
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
 
 }else{
 
-darkBtn.innerHTML="🌙";
-
-localStorage.setItem("theme","light");
+topBtn.style.display="none";
 
 }
 
 });
 
-}
+topBtn.onclick=()=>{
 
-// Saved Theme
+window.scrollTo({
 
-if(localStorage.getItem("theme")==="dark"){
+top:0,
 
-document.body.classList.add("dark-mode");
+behavior:"smooth"
 
-if(darkBtn){
+});
 
-darkBtn.innerHTML="☀️";
+};
 
-}
+// Product Button Alert
+document.querySelectorAll(".product-card .btn").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+alert("Thank you for your interest.\nPlease contact Sunaina Enterprises for more details.");
+
+});
+
+});
+
+// Current Year in Footer
+const year=document.getElementById("year");
+
+if(year){
+
+year.textContent=new Date().getFullYear();
 
 }
